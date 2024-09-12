@@ -12,7 +12,7 @@ public class CommentAdminService {
 
     private final CommentRepository commentRepository;
 
-    @AdminOnly
+
     @Transactional
     public void deleteComment(long commentId) {
         commentRepository.deleteById(commentId);
